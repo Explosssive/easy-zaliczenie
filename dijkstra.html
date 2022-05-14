@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZMN kolos II - Dijkstra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <a href="index.html"><h1>ZMN kolos II</h1></a>
+    <div class="topbox">
+        <h5><img class="dancing" src="modeus.gif">Easy <u>Dijkstra</u> (by Pablo)<img class="dancing" src="modeus.gif"></h5>
+    </div>
+    <div id="settings">
+        <div class="short-width">
+            <label for="size">Ilość połączeń: </label> <input type="number" min="1" max="50" value="9" name="size" id="size">
+        </div>
+        <button id="start_filling">Przejdź do wypełniania tabelki</button>
+    </div>
+    <div id="filling"></div>
+    <div id="solving"></div>
+    <script src="dijkstra.js"></script>
+</body>
+</html>
