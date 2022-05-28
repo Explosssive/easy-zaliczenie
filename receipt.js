@@ -1,6 +1,6 @@
 $(function(){
     $('#get-receipt').on("click", function(){
-        domtoimage.toJpeg(document.getElementById('solving'), {'bgcolor':'white'})
+        domtoimage.toPng(document.getElementById('solving'))
         .then(function (dataUrl) {
             var link = document.createElement('a');
             link.download = 'receipt.jpg';
