@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKiAR - Monsieur le Descripteur</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <a href="index.html"><h1>SKiAR</h1></a>
+    <div class="topbox">
+        <h5><img class="dancing" src="../cerberus.gif">Easy <u>SKiAR</u> (by Pablo)<img class="dancing" src="../cerberus.gif"></h5>
+    </div>
+    <div id="settings">
+        <div class="medium-width">
+            <label for="ab_data">Adres bazowy (A.B.): </label> <input value="3MB + 128KB + 32KB + 8B" type="text" name="ab_data" id="ab_data">
+        </div>
+        <div class="medium-width">
+            <label for="w_data">Wielkość (W.): </label> <input value="4MB + 256KB + 32KB + 63B" type="text" name="w_data" id="w_data">
+        </div>
+        <button id="solve">Policz za mnie 🥺</button>
+    </div>
+    <div id="calculations">Tutaj pojawią się obliczenia</div>
+    <div id="answer">
+        <table>
+            <tr>
+                <th colspan="6">Deskryptor</th>
+            </tr>
+            <tr>
+                <th>lim<br>2B</th><th>base_l<br>2B</th><th>base_m<br>1B</th><th>attr_1<br>1B</th><th>attr_2<br>1B</th><th>base_h<br>1B</th>
+            </tr>
+            <tr>
+                <td id="lim"></td><td id="base_l"></td><td id="base_m"></td><td>92h</td><td id="attr_2"></td><td id="base_h"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="deskryptor.js"></script>
+</body>
+</html>
